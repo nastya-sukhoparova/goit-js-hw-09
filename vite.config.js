@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { glob } from 'glob';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
-import injectHTML from 'vite-plugin-html';
+
 
 export default defineConfig(({ command }) => {
   return {
