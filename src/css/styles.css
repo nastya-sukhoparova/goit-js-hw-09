@@ -1,22 +1,42 @@
-.feedback-form {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.gallery {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 300px;
-  margin: auto;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
-input,
-textarea {
+.gallery-item {
+  flex-basis: calc(33.333% - 16px);
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-image {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
 }
