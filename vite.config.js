@@ -3,7 +3,6 @@ import { glob } from 'glob';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
-
 export default defineConfig(({ command }) => {
   return {
     define: {
@@ -38,7 +37,6 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
-      injectHTML(),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
